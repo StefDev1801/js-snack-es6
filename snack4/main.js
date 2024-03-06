@@ -27,7 +27,7 @@ const family =
         cognome:'Fracasso',
         eta:34,
     },
-]
+];
 // Crea quindi un nuovo array inserendo, per ogni persona, una frase con il nome e cognome e l’indicazione se può guidare, in base all’età.
 
 const ICanDrive = family.filter((familymember) => {return familymember.eta > 17}).map((familyMember) => `${familyMember.nome} ${familyMember.cognome} ho la patente`);//filters con funzione di callback
