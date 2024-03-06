@@ -21,21 +21,16 @@ squadreDiCalcio.forEach(squadra => {
         squadra.falliSubiti = getRndInteger(30,200)
 });
 
-console.log(squadreDiCalcio);
+// console.log(squadreDiCalcio);
 
 
 
 // Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
-onlyNameAndfails = []
-
-squadreDiCalcio.forEach(squadra => {
+let onlyNameAndfails = []
+onlyNameAndfails = squadreDiCalcio.map(squadra => {
     let {nome, falliSubiti} = squadra
-    nome = squadra.nome
-    falliSubiti = squadra.falliSubiti
-    onlyNameAndfails.push(nome+falliSubiti)
-    //un oggetto che 
-    return onlyNameAndfails
+    return { nome, falliSubiti };
 });
 
 console.log(onlyNameAndfails);
