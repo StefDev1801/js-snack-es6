@@ -31,7 +31,5 @@ const zucchine = [
 // Calcola quanto pesano tutte le zucchine.
 let totalWeight = 0
 
-zucchine.forEach(zucchina => {
-    totalWeight += zucchina.weight;
-});
+zucchine.forEach(zucchina => totalWeight += zucchina.weight);
 console.log(totalWeight);
